@@ -1,0 +1,243 @@
+
+/* Global Styles
+----------------------------------*/
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	font-family: 'Roboto', sans-serif;
+	line-height: 1.25;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+a:visited {
+	color: #000000;
+}
+
+img {
+	width: 300px;
+}
+
+h1 {
+	font-size: 90px;
+}
+
+h2 {
+	font-size: 40px;
+}
+
+h1, h2 {
+	font-family: 'Poppins', sans-serif;
+	margin: 0;
+}
+
+ h3 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+
+h4 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 22px;
+}
+
+.content-wrap {
+	max-width: 900px;
+	width: 85%;
+	margin: 0 auto;
+	padding: 60px 0;
+}
+
+.item-details h3 + p {
+	font-style: italic;
+}
+
+.item-details h3 ~ p {
+	margin: 0;
+}
+
+.divider > section {
+	border-bottom: 1px dashed #000000;
+	padding: 25px 0;
+}
+
+.divider > section:last-of-type {
+	border-bottom: none;
+}
+
+/* Profile section
+----------------------------------*/
+header {
+	background: #84DCC6;
+	text-align: center;
+}
+
+header img {
+	border-radius: 50%;
+}
+
+header h2 {
+	text-decoration: none;
+}
+
+/* Project section
+----------------------------------*/
+.projects {
+	background: #FFFFFA;
+}
+
+.projects .project-link {
+	background: #84DCC6;
+	text-decoration: none;
+	padding: 8px;
+	border-radius: 4px;
+	display: inline-block;
+}
+
+.projects .project-link:hover {
+	background: rgba(132, 220, 198,80%);
+}
+
+.project-item {
+	overflow: hidden;
+}
+
+.project-item img {
+	border: 8px #000000 solid;
+	border-radius: 35px;
+}
+
+.project-item h3 {
+	font-family: 'Poppins', sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+
+.project-item h4 {
+	margin-top: 5px;
+}
+
+/* Work experience section
+----------------------------------*/
+.work-experience {
+	background: #FF686B;
+	color: #FFFFFF;
+}
+
+.work-experience .divider > section {
+	border-bottom-color: #FFFFFF;
+}
+
+.job-item h3 {
+	font-size: 25px;
+	margin-top: 10px;
+	font-style: normal;
+	font-weight: bold;
+}
+
+.job-details {
+	align-self: start;
+	font-style: italic;
+}
+
+.job-summary {
+	align-self: start;
+}
+
+/* Education section
+----------------------------------*/
+.education {
+	background-image: url("../images/Books.jpg");
+	background-size: cover;
+	padding-bottom: 100px;
+}
+
+.education p {
+	width: 60%;
+	font-style: italic;
+}
+
+
+/* Contact section
+----------------------------------*/
+footer {
+	background: #A5FFD6;
+	text-align: center;
+}
+
+footer img {
+	width: 100px;
+	height: 100px;
+}
+
+footer h2 {
+	text-decoration: none;
+}
+
+.contact-list {
+	list-style-type: none;
+	padding: 0;
+}
+
+.contact-list a {
+	padding: 25px;
+	display: inline-block;
+}
+
+
+/* Responsive
+----------------------------------*/
+@media screen and (min-width: 720px) {
+	.project-item img {
+		float: left;
+		margin-right: 20px;
+		border: 8px #000000 solid;
+		border-radius: 35px;
+	}
+
+	.education {
+		background-position: top right;
+	}
+
+	.job-item {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		column-gap: 20px;
+	}
+
+	.contact-list {
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 719px) {
+	h1 {
+		font-size: 75px;
+		line-height: 0.9;
+		margin-bottom: 20px;
+	}
+
+	h2 {
+		line-height: 1;
+	}
+
+	.contact-list a {
+		padding: 5px;
+	}
+}
